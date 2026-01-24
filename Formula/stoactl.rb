@@ -11,7 +11,7 @@ class Stoactl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.0/stoactl_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8e37bce7bd31f2a432847b96f5b2ba07604b64320ef2195b8e7f9ff3fc8fb456"
+      sha256 "a67992d49af9e557547cf7256cc7362a104b83046feeba222b586b115c875d11"
 
       def install
         bin.install "stoactl"
@@ -19,7 +19,7 @@ class Stoactl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.0/stoactl_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f13c9afae3c44ae1c0fa54f00ef9ab9dfb656eabb216f7d75a0da57c9fcbb45c"
+      sha256 "b87ccefb7aa218565c97656d0adfb0686bf5cc43b95496132082143d74f45436"
 
       def install
         bin.install "stoactl"
@@ -30,14 +30,14 @@ class Stoactl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.0/stoactl_0.1.0_linux_amd64.tar.gz"
-      sha256 "c8d8e86d0f0e209203d045b50800683cb25cca7cb460379593fbf5546cc4d216"
+      sha256 "5e9fddcf19202078b773533b3a8ce4894a13c00cb13610abcebfb175604788cc"
       def install
         bin.install "stoactl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.0/stoactl_0.1.0_linux_arm64.tar.gz"
-      sha256 "a0ba601ce8935fd9a11bc62ab2773e6138044b4ce13e274d11c061a71f3d463b"
+      sha256 "cbf13c967d1a2a76003ca9b206fecc23def3af629d1d253539fb2cb3aa949b54"
       def install
         bin.install "stoactl"
       end
