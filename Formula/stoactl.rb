@@ -5,21 +5,21 @@
 class Stoactl < Formula
   desc "GitOps-native CLI for STOA Platform"
   homepage "https://gostoa.dev"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.0/stoactl_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ecc211c6cac3c6dbb66542d23b938eeeb4b642d3b2d8555f370154dacb7a7527"
+      url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.1/stoactl_0.1.1_darwin_amd64.tar.gz"
+      sha256 "5029a36d55afc51fde13c0979e19c7e5d7833416c4facb7abf9b1690d8e7681b"
 
       def install
         bin.install "stoactl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.0/stoactl_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d62dab904d41369a1dc04304768ed59db86914883eaab20cb8ce7518a04ceb25"
+      url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.1/stoactl_0.1.1_darwin_arm64.tar.gz"
+      sha256 "19c12ac469b5cb76e3c7415f8759cd902533ff8aabd91da64c79ebcadb293d4f"
 
       def install
         bin.install "stoactl"
@@ -29,15 +29,15 @@ class Stoactl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.0/stoactl_0.1.0_linux_amd64.tar.gz"
-      sha256 "50fe5f70c863d6798f07a47b5d0829c2624232de16d27280ab986c5896833726"
+      url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.1/stoactl_0.1.1_linux_amd64.tar.gz"
+      sha256 "8ae00d5b9b26d0d2485cb4f771b278bbbd6e1773e55c280966e48feceb8a8a23"
       def install
         bin.install "stoactl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.0/stoactl_0.1.0_linux_arm64.tar.gz"
-      sha256 "f54a065528a44bf11ffcdeb68f5e6f213fe7d85d5cd61e662c415c9c5fc0f57a"
+      url "https://github.com/stoa-platform/stoactl/releases/download/v0.1.1/stoactl_0.1.1_linux_arm64.tar.gz"
+      sha256 "184b9937e3f27cd7e88187a498e44efea4f3cb6dec8a18cbfa26c394a3e49a56"
       def install
         bin.install "stoactl"
       end
